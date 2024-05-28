@@ -169,3 +169,99 @@ h2 {
   max-width: min(1000px, 100%);
   font-size: clamp(3rem, 5vw, 8rem);
 }
+
+.propuestas {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.propuestas h2 {
+  margin: 0 auto;
+  max-width: min(500px, 100%);
+  font-size: clamp(2rem, 5vw, 2rem);
+}
+
+.propuestas .container-propuestas {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 70%;
+}
+
+.container-propuestas .propuestas-card {
+  border: 1px dashed #8a3dfd;
+  border-radius: 40px;
+  padding: 22px;
+  padding: 20px 50px;
+}
+
+.container-propuestas .propuestas-card p {
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+}
+
+.liderazgo {
+  padding-top: 5rem;
+}
+
+.liderazgo .container-equipo {
+  display: flex;
+  margin-top: 3rem;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.container-equipo .equipo-card {
+  background-color: #9d8cff;
+  padding: 25px;
+  color: #06002e;
+  border-radius: 20px;
+  width: 280px;
+}
+
+.container-equipo .equipo-card .nombre {
+  display: flex;
+}
+
+.container-equipo .equipo-card p {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-size: clamp(0.7rem, 1.5vw, 0.75rem);
+}
+
+.container-equipo .equipo-card span {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-size: clamp(1.5rem, 1.5vw, 1rem);
+}
+
+.testimonios {
+  padding-top: 3rem;
+}
+
+.slider-container-testimonios {
+  margin: 0 auto;
+}
+
+.testimonios .testimonio-card {
+  width: 70% !important;
+  background: linear-gradient(to bottom right, #57d6d4, #b19cd9);
+  padding: 2rem 1rem;
+  text-align: start;
+  border-radius: 10px;
+  color: black;
+}
+
+.slick-track {
+  display: flex;
+  text-align: center;
+}
+
+.testimonios .testimonio-card p {
+  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+  margin-top: 0.5rem;
+}
+
+.testimonios .testimonio-card h4 {
+  font-size: clamp(1.2rem, 1.5vw, 1rem);
+}

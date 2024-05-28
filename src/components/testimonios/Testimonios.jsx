@@ -34,7 +34,14 @@ export const Testimonios = () => {
             <div key={i} className='testimonio-card'>
               <div className='person'>
                 <h4>{item.title}</h4>
-                <img src='' alt='' />
+
+                <div className='person-data'>
+                  <p>Jhonattan Gomez</p>
+                  <img
+                    src='https://media.canva.com/v2/image-resize/format:PNG/height:158/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F7bhN8%2FMAGAFd7bhN8%2F1%2Fp.png/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAGIhXwvzSMGQ9I-8Zxkw3PQxfeC22W1BjxJ9aiwvck0l&exp=1716919120&osig=AAAAAAAAAAAAAAAAAAAAAD6hw_kkqpVpflst_Ex2cfCfCkKTOIkUPjqvvN-jL2w4&signer=media-rpc&x-canva-quality=thumbnail&x-canva-subsampling=T'
+                    alt=''
+                  />
+                </div>
               </div>
               <p>{item.parragraph}</p>
             </div>

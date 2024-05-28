@@ -3,7 +3,7 @@ function Logros() {
     <>
       <section className='Logros'>
         <h2>Logros y Contribuciones Actuales</h2>
-        <img src='https://www.svgrepo.com/show/95126/reward-symbol-in-a-circle.svg' />
+        <img src='https://video-public.canva.com/VAFKHIeV6E8/v/07ba2e6363.gif' />
       </section>
     </>
   );

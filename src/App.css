@@ -158,6 +158,8 @@ h2 {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0;
+  padding-bottom: 3rem;
 }
 
 .Logros img {
@@ -173,13 +175,26 @@ h2 {
 .propuestas {
   display: flex;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 7rem;
+}
+
+.propuestas .propuestas-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.propuestas .propuestas-titulo img {
+  width: 60%;
 }
 
 .propuestas h2 {
   margin: 0 auto;
   max-width: min(500px, 100%);
   font-size: clamp(2rem, 5vw, 2rem);
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .propuestas .container-propuestas {
@@ -201,7 +216,7 @@ h2 {
 }
 
 .liderazgo {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 .liderazgo .container-equipo {
@@ -221,6 +236,14 @@ h2 {
 
 .container-equipo .equipo-card .nombre {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-equipo .equipo-card .nombre img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
 
 .container-equipo .equipo-card p {
@@ -236,7 +259,7 @@ h2 {
 }
 
 .testimonios {
-  padding-top: 3rem;
+  padding-top: 8rem;
 }
 
 .slider-container-testimonios {
@@ -252,6 +275,24 @@ h2 {
   color: black;
 }
 
+.testimonios .testimonio-card .person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonios .testimonio-card .person .person-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
+.testimonio-card .person .person-data img {
+  width: 100px;
+  border-radius: 50%;
+}
+
 .slick-track {
   display: flex;
   text-align: center;
@@ -264,4 +305,14 @@ h2 {
 
 .testimonios .testimonio-card h4 {
   font-size: clamp(1.2rem, 1.5vw, 1rem);
+}
+
+.imagenes-contribuciones {
+  margin-bottom: 15rem;
+  position: relative;
+  text-align: center;
+}
+
+.imagenes-contribuciones img {
+  margin: 0 30px;
 }

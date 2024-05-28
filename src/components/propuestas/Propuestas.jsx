@@ -1,8 +1,10 @@
 export const Propuestas = () => {
   return (
     <section className='propuestas'>
-      <h2>PROPUESTAS Y DECISIONES ESTRATÉGICAS</h2>
-      <img src='' alt='' />
+      <div className='propuestas-titulo'>
+        <h2>PROPUESTAS Y DECISIONES ESTRATÉGICAS</h2>
+        <img src='https://video-public.canva.com/VAFKHIeV6E8/v/07ba2e6363.gif' />
+      </div>
 
       <div className='container-propuestas'>
         <div className='propuestas-card'>

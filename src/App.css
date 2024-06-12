@@ -316,3 +316,66 @@ h2 {
 .imagenes-contribuciones img {
   margin: 0 30px;
 }
+
+.kpi_section {
+  margin-top: 13rem;
+}
+
+.cards_kpi {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card_kpi {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 10px;
+  background: linear-gradient(to bottom right, #57d6d4, #b19cd9);
+}
+
+.indicadores {
+  width: 100%;
+  height: 100%;
+}
+
+.cards_indicadores {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.card_indicador {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: black;
+  gap: 10px;
+  background: linear-gradient(to bottom right, #57d6d4, #b19cd9);
+}
+
+.funciones {
+  width: 100%;
+  height: 100%;
+}
+
+.funciones ul {
+  margin-top: 60px;
+}

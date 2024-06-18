@@ -330,13 +330,14 @@ h2 {
 }
 
 .card_kpi {
-  width: fit-content;
-  height: fit-content;
+  width: 300px;
+  height: 200px;
   border-radius: 8px;
   padding: 20px;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   color: black;
   gap: 10px;
   background: linear-gradient(to bottom right, #57d6d4, #b19cd9);
@@ -345,17 +346,31 @@ h2 {
 .indicadores {
   width: 100%;
   height: 100%;
+
+  position: relative;
+  width: calc(100% + 10rem);
+  background-color: #0a7af3;
+  padding: 1rem 3rem;
+  transition: top 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: -5rem;
+  margin: 0;
 }
 
 .cards_indicadores {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
   justify-content: flex-end;
   gap: 20px;
-  height: 100%;
-  flex-wrap: wrap;
 }
 
 .card_indicador {

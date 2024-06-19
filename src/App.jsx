@@ -26,7 +26,7 @@ function App() {
       <Propuestas />
       <Liderazgo />
       <Testimonios />
-      <KPI />
+      <KPI /> 
       <Indicadores />
       <Tecnologias />
       <Funciones />

@@ -1,58 +1,69 @@
+import jeyssonAvatar from '../../assets/img/avatars/jey.jpg';
+import marcosAvatar from '../../assets/img/avatars/marcos.jpg';
+import jhonAvatar from '../../assets/img/avatars/jhon.jpg';
+
+import jhonVideo from '../../assets/media/jhon.mp4';
+import marcosVideo from '../../assets/media/marcos.mp4';
+
+import UserPerfil from './UserPerfil';
+import Slider from 'react-slick/lib/slider';
+
 export const Liderazgo = () => {
+  const team = [
+    {
+      avatar: marcosAvatar,
+      name: 'Marcos Alape',
+      description: `Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.`,
+      video: marcosVideo,
+    },
+
+    {
+      avatar: jeyssonAvatar,
+      name: 'Jeysson Henriquez',
+      description: `Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.`,
+      video: jhonVideo,
+    },
+
+    {
+      avatar: jhonAvatar,
+      name: 'Jhonattan Gómez',
+      description: `Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.`,
+      video: jhonVideo,
+    },
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 100,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <section className='liderazgo'>
       <h2>Liderazgo y gestión de equipo</h2>
+      <Slider {...settings}>
+        {team.map((user, i) => (
+          <div key={i}>
+            <div className='container'>
+              <div>
+                <UserPerfil
+                  avatar={user.avatar}
+                  name={user.name}
+                  description={user.description}
+                />
+              </div>
 
-      <div className='container-equipo'>
-        <div className='equipo-card'>
-          <div className='nombre'>
-            <p>Jeysson Henriquez</p>
-            <img
-              src='https://media.canva.com/v2/image-resize/format:PNG/height:146/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2FyliQI%2FMAGABWyliQI%2F1%2Fp.png/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAANmvqo-qDB6Iy78jHCCfrPmkoF3Os7E-QqLr6rJ91x2c&exp=1716917590&osig=AAAAAAAAAAAAAAAAAAAAAAhn157IQD257XeCeKrjLbQdeutqmKsRxLg3lLQLwy4v&signer=media-rpc&x-canva-quality=thumbnail&x-canva-subsampling=T'
-              alt=''
-            />
+              <div>
+                <video controls>
+                  <source src={user.video} type='video/mp4' />
+                </video>
+              </div>
+            </div>
           </div>
-          <span>
-            Senior <br /> Frontend
-          </span>
-          <p>
-            Testimonials are short quotes from people who love your brand. Its a
-            great way to convince customers to try your services.
-          </p>
-        </div>
-        <div className='equipo-card'>
-          <div className='nombre'>
-            <p>Marcos Alape</p>
-            <img
-              src='https://media.canva.com/v2/image-resize/format:PNG/height:155/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2FQ7XcU%2FMAGAFfQ7XcU%2F1%2Fp.png/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAF1YC_Y1m-ejL6SOXTriD1AenBGSbPsvT6JwxSXCGh3B&exp=1716918357&osig=AAAAAAAAAAAAAAAAAAAAAERiPzI8yWk0YqjbnipI3LJnNKhj4RqfudN6mSKvwf71&signer=media-rpc&x-canva-quality=thumbnail&x-canva-subsampling=T'
-              alt=''
-            />
-          </div>
-          <span>
-            Junior <br /> developer
-          </span>
-          <p>
-            Testimonials are short quotes from people who love your brand. Its a
-            great way to convince customers to try your services.
-          </p>
-        </div>
-        <div className='equipo-card'>
-          <div className='nombre'>
-            <p>Jhonattan Gómez</p>
-            <img
-              src='https://media.canva.com/v2/image-resize/format:PNG/height:158/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F7bhN8%2FMAGAFd7bhN8%2F1%2Fp.png/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAGIhXwvzSMGQ9I-8Zxkw3PQxfeC22W1BjxJ9aiwvck0l&exp=1716919120&osig=AAAAAAAAAAAAAAAAAAAAAD6hw_kkqpVpflst_Ex2cfCfCkKTOIkUPjqvvN-jL2w4&signer=media-rpc&x-canva-quality=thumbnail&x-canva-subsampling=T'
-              alt=''
-            />
-          </div>
-          <span>
-            Analista <br /> Soporte
-          </span>
-          <p>
-            Testimonials are short quotes from people who love your brand. Its a
-            great way to convince customers to try your services.
-          </p>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </section>
   );
 };

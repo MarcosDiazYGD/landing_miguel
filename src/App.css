@@ -16,7 +16,7 @@ html {
 }
 
 section {
-  height: calc(100vh - 10rem);
+  min-height: calc(100vh - 10rem);
   margin: 5rem 0;
 }
 
@@ -176,7 +176,6 @@ h2 {
 .propuestas {
   display: flex;
   align-items: center;
-  padding-top: 7rem;
 }
 
 .propuestas .propuestas-titulo {
@@ -217,50 +216,81 @@ h2 {
 }
 
 .liderazgo {
-  padding-top: 10rem;
-}
-
-.liderazgo .container-equipo {
   display: flex;
-  margin-top: 3rem;
-  gap: 20px;
-  justify-content: flex-end;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.container-equipo .equipo-card {
-  background-color: #9d8cff;
-  padding: 25px;
-  color: #06002e;
-  border-radius: 20px;
-  width: 280px;
-}
-
-.container-equipo .equipo-card .nombre {
+.liderazgo .container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 
-.container-equipo .equipo-card .nombre img {
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+.liderazgo .container > div:nth-child(1) {
+  width: min(500px, 100%);
 }
 
-.container-equipo .equipo-card p {
-  display: block;
-  padding-bottom: 0.5rem;
-  font-size: clamp(0.7rem, 1.5vw, 0.75rem);
+.liderazgo .container > div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000070;
+  border-radius: 10px;
+  filter: blur();
+  padding: 1rem;
 }
 
-.container-equipo .equipo-card span {
-  display: inline-block;
-  padding-bottom: 0.5rem;
-  font-size: clamp(1.5rem, 1.5vw, 1rem);
+.liderazgo .container > div:nth-child(2) video {
+  width: 100%;
+  height: 100%;
 }
 
-.testimonios {
-  padding-top: 8rem;
+.liderazgo .cont_userPerfil {
+  height: 100%;
+  overflow: hidden;
+  background-color: whitesmoke;
+  filter: blur();
+  color: #21232a;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.liderazgo .cont_userPerfil > div:nth-child(1) {
+  overflow: hidden;
+  height: 100%;
+}
+
+.liderazgo .cont_userPerfil > div:nth-child(2) {
+  padding: 1rem;
+  height: fit-content;
+}
+
+.liderazgo .cont_userPerfil:hover img {
+  scale: 1.1;
+}
+
+.liderazgo .cont_userPerfil img {
+  transition: all 0.2s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.liderazgo .cont_userPerfil h3 {
+  font-size: clamp(1rem, 1vw, 2rem);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.liderazgo .cont_userPerfil p {
+  font-size: clamp(1rem, 1vw, 2rem);
 }
 
 .slider-container-testimonios {
@@ -268,7 +298,7 @@ h2 {
 }
 
 .testimonios .testimonio-card {
-  width: 70% !important;
+  width: 80% !important;
   background: linear-gradient(to bottom right, #57d6d4, #b19cd9);
   padding: 2rem 1rem;
   text-align: start;
@@ -299,13 +329,15 @@ h2 {
   text-align: center;
 }
 
-.testimonios .testimonio-card p {
-  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
-  margin-top: 0.5rem;
+.testimonios .testimonio-card h4 {
+  width: min(600px, 100%);
+  font-size: clamp(2rem, 2.6vw, 3rem);
+  text-wrap: balance;
 }
 
-.testimonios .testimonio-card h4 {
-  font-size: clamp(1.2rem, 1.5vw, 1rem);
+.testimonios .testimonio-card p {
+  font-size: clamp(1rem, 1.7vw, 2.5rem);
+  margin-top: 1rem;
 }
 
 .imagenes-contribuciones {

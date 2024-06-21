@@ -310,6 +310,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .testimonios .testimonio-card .person .person-data {
@@ -320,8 +321,19 @@ h2 {
 }
 
 .testimonio-card .person .person-data img {
-  width: 100px;
+  width: 80px;
+  aspect-ratio: 1;
   border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.testimonio-card .person .person-data p {
+  text-wrap: nowrap;
+}
+
+.testimonios .testimonio-card p {
+  font-size: clamp(1rem, 1.7vw, 2.5rem);
 }
 
 .slick-track {
@@ -333,11 +345,6 @@ h2 {
   width: min(600px, 100%);
   font-size: clamp(2rem, 2.6vw, 3rem);
   text-wrap: balance;
-}
-
-.testimonios .testimonio-card p {
-  font-size: clamp(1rem, 1.7vw, 2.5rem);
-  margin-top: 1rem;
 }
 
 .imagenes-contribuciones {
@@ -378,45 +385,60 @@ h2 {
 .indicadores {
   width: 100%;
   height: 100%;
-
   position: relative;
   width: calc(100% + 10rem);
-  background-color: #0a7af3;
+  background-color: #06002e;
+  color: #fff;
   padding: 1rem 3rem;
   transition: top 0.2s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   left: -5rem;
-  margin: 0;
+  display: flex;
+  gap: 3rem;
 }
 
-.cards_indicadores {
-  margin-top: 30px;
-  width: 100%;
+.indicadores .container {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  flex-direction: column;
+}
+.indicadores .container > div {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.indicador {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.row {
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.card_indicador {
+  border-radius: 5px;
   width: 300px;
-  height: 200px;
-  border-radius: 8px;
-  padding: 20px;
-  padding-top: 50px;
+  aspect-ratio: 16/7;
+  padding: 1rem;
+  border: 1px solid #beb0fa;
+}
+
+.indicador > div:nth-child(1) {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  color: black;
-  gap: 10px;
-  background: linear-gradient(to bottom right, #57d6d4, #b19cd9);
+  justify-content: end;
+  font-size: 2rem;
+  color: #beb0fa;
+}
+
+.indicador > div:nth-child(2) {
+  display: flex;
+  justify-content: start;
+}
+
+.indicador > div:nth-child(2) > p {
+  font-size: 1.5rem;
+}
+
+.indicador > div:nth-child(3) > p {
+  font-size: 0.7rem;
 }
 
 .funciones {

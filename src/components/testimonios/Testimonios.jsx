@@ -1,12 +1,19 @@
+import jeyAvatar from '../../assets/img/avatars/jey.jpg';
+import marcosAvatar from '../../assets/img/avatars/marcos.jpg';
+
 import Slider from 'react-slick';
 
 const infoCard = [
   {
+    avatar: jeyAvatar,
+    name: 'Jeysson Henrriquez',
     title: 'Consultora de monitoreo y stakeholders',
     parragraph:
       'Su conocimiento, proactividad y comunicación clara fueron fundamentales para el éxito del proyecto de scraper. Además, su capacidad para resolver problemas de manera creativa nos permitió superar obstáculos y agregar detalles de calidad que no habíamos contemplado. Gracias al desarrollo que realizó Migue, hemos logrado una reducción del 30% en el tiempo de ingestiones a Clarity, permitiendo así una mejora significativa en la eficiencia operativa del área, contribuyendo directamente al cumplimiento del objetivo estratégico de la empresa y del área para el primer trimestre: Cumplimos con la optimización de procesos presupuestada',
   },
   {
+    avatar: marcosAvatar,
+    name: 'Marcos Alape',
     title: 'Liderazgo y Gestión de Equipos',
     parragraph:
       'Su conocimiento, proactividad y comunicación clara fueron fundamentales para el éxito del proyecto de scraper. Además, su capacidad para resolver problemas de manera creativa nos permitió superar obstáculos y agregar detalles de calidad que no habíamos contemplado. Gracias al desarrollo que realizó Migue, hemos logrado una reducción del 30% en el tiempo de ingestiones a Clarity, permitiendo así una mejora significativa en la eficiencia operativa del área, contribuyendo directamente al cumplimiento del objetivo estratégico de la empresa y del área para el primer trimestre: Cumplimos con la optimización de procesos presupuestada',
@@ -36,11 +43,8 @@ export const Testimonios = () => {
                 <h4>{item.title}</h4>
 
                 <div className='person-data'>
-                  <p>Jhonattan Gomez</p>
-                  <img
-                    src='https://media.canva.com/v2/image-resize/format:PNG/height:158/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2F7bhN8%2FMAGAFd7bhN8%2F1%2Fp.png/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAGIhXwvzSMGQ9I-8Zxkw3PQxfeC22W1BjxJ9aiwvck0l&exp=1716919120&osig=AAAAAAAAAAAAAAAAAAAAAD6hw_kkqpVpflst_Ex2cfCfCkKTOIkUPjqvvN-jL2w4&signer=media-rpc&x-canva-quality=thumbnail&x-canva-subsampling=T'
-                    alt=''
-                  />
+                  <p>{item.name}</p>
+                  <img src={item.avatar} />
                 </div>
               </div>
               <p>{item.parragraph}</p>

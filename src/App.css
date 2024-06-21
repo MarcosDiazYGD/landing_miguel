@@ -601,6 +601,7 @@ h2 {
   font-weight: bold;
   text-align: justify;
   width: 100%;
+  position: relative;
 }
 
 .plan-carrera .container-logros div:nth-child(2) {
@@ -608,6 +609,17 @@ h2 {
 }
 .plan-carrera .container-logros div:nth-child(3) {
   background-color: #9c8bef;
+}
+
+.plan-carrera .container-logros div span {
+  color: #ff8e51;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  font-size: 50px;
+  transform: rotate(-8deg);
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 45%;
 }
 
 .plan-carrera .container-qs {
@@ -626,4 +638,33 @@ h2 {
   text-align: justify;
   width: 85%;
   align-self: flex-end;
+  position: relative;
+}
+
+.plan-carrera .container-qs div span {
+  position: absolute;
+  top: 40%;
+  left: -45px;
+  border: 2px solid black;
+  font-size: 30px;
+  padding: 7px;
+  color: #ff8e51;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+.plan-carrera .container-qs div:nth-child(1) span:nth-child(1) {
+  background-color: #79aed3;
+}
+
+.plan-carrera .container-qs div:nth-child(2) span:nth-child(1) {
+  background-color: #9c8bef;
+}
+
+.plan-carrera .container-qs div:nth-child(3) span:nth-child(1) {
+  background-color: #ffd83f;
+}
+
+.plan-carrera .container-qs div:nth-child(4) span:nth-child(1) {
+  background-color: #f9b2dc;
 }

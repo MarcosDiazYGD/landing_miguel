@@ -21,6 +21,7 @@ export const PlanCarrera = () => {
       <div className='flex-logros'>
         <div className='container-logros'>
           <div>
+            <span>1°</span>
             <p>
               Establecer y seguir un plan semanal de gestión del tiempo que
               equilibre efectivamente mi vida personal, profesional y mis
@@ -32,6 +33,7 @@ export const PlanCarrera = () => {
             </p>
           </div>
           <div>
+            <span>2°</span>
             <p>
               Inscribirme en un programa de posgrado en ciberseguridad o
               inteligencia artificial en una universidad antes de agosto de este
@@ -41,6 +43,7 @@ export const PlanCarrera = () => {
             </p>
           </div>
           <div>
+            <span>3°</span>
             <p>
               Crear y seguir un plan financiero personalizado para ahorrar un
               mínimo del 20% de mis ingresos mensuales, empezando este mes, con
@@ -53,6 +56,7 @@ export const PlanCarrera = () => {
         </div>
         <div className='container-qs'>
           <div>
+            <span>Q1</span>
             <p>
               Liderar el desarrollo e implementación de una infraestructura
               tecnológica escalable y sostenible capaz de soportar la "
@@ -63,6 +67,7 @@ export const PlanCarrera = () => {
             </p>
           </div>
           <div>
+            <span>Q2</span>
             <p>
               realizar un análisis exhaustivo de las capacidades tecnológicas
               actuales de buho, para mejorar la competitividad. Desarrollar
@@ -72,6 +77,7 @@ export const PlanCarrera = () => {
             </p>
           </div>
           <div>
+            <span>Q3</span>
             <p>
               Adquirir conocimientos en infraestructura en AWS a través de la
               participación en formaciones y/o diplomados, con el propósito de
@@ -82,6 +88,7 @@ export const PlanCarrera = () => {
             </p>
           </div>
           <div>
+            <span>Q4</span>
             <p>
               Desplegar un modelo de lenguaje de largo alcance (LLM),
               reentrenado con datos propios, para uso interno. El objetivo es

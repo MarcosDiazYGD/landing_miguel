@@ -485,3 +485,123 @@ h2 {
 .navbar.scrolled {
   top: -100px;
 }
+
+.plan-carrera {
+  position: relative;
+  width: calc(100% + 10rem);
+  background-color: #3ea66b;
+  padding: 2rem 3rem;
+  transition: top 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  left: -5rem;
+  margin: 0;
+}
+
+.plan-carrera h2 {
+  background-color: #ffd83f;
+  color: #ff6953;
+  width: fit-content;
+  border-radius: 30px;
+  padding: 0px 50px;
+  border: 1px solid black;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  font-weight: bold;
+  transform: rotate(-7deg);
+}
+
+.plan-carrera h2:nth-child(2) {
+  background-color: #fffbe0;
+  color: #ff6953;
+  width: fit-content;
+  border-radius: 30px;
+  padding: 0px 50px;
+  border: 1px solid black;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+  font-weight: bold;
+  font-size: 25px;
+  transform: initial;
+  transform: rotate(4deg);
+  position: absolute;
+  right: 3%;
+}
+
+.plan-carrera .container-desarrollar {
+  background-color: #5cd1ff;
+  border: 2px solid black;
+  padding: 5px 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  width: fit-content;
+  text-align: justify;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.plan-carrera .container-lograr {
+  background-color: #ffd83f;
+  border: 2px solid black;
+  padding: 15px 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  width: fit-content;
+  text-align: justify;
+  margin-top: 40px;
+  width: 50%;
+  text-align: center;
+  margin-left: 60px;
+  top: 30%;
+  position: absolute;
+}
+
+.plan-carrera .flex-logros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.plan-carrera .container-logros {
+  display: flex;
+  gap: 20px;
+  width: 65%;
+  margin-top: 40px;
+}
+
+.plan-carrera .container-logros div {
+  padding: 10px;
+  background-color: #feb0e1;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+  width: 100%;
+}
+
+.plan-carrera .container-logros div:nth-child(2) {
+  background-color: #ff8e51;
+}
+.plan-carrera .container-logros div:nth-child(3) {
+  background-color: #9c8bef;
+}
+
+.plan-carrera .container-qs {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-carrera .container-qs div {
+  background-color: #fffbe0;
+  color: black;
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 18px;
+  text-align: justify;
+  width: 85%;
+  align-self: flex-end;
+}

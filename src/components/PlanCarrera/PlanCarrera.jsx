@@ -15,10 +15,10 @@ export const PlanCarrera = () => {
           externos.
         </p>
       </div>
-      <div className='container-lograr'>
-        <span>LO QUE QUIERO LOGRAR ESTE AÑO</span>
-      </div>
       <div className='flex-logros'>
+        <div className='container-lograr'>
+          <span>LO QUE QUIERO LOGRAR ESTE AÑO</span>
+        </div>
         <div className='container-logros'>
           <div>
             <span>1°</span>

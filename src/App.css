@@ -512,7 +512,7 @@ h2 {
   position: relative;
   width: calc(100% + 10rem);
   background-color: #3ea66b;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   transition: top 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -530,6 +530,7 @@ h2 {
   text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
   font-weight: bold;
   transform: rotate(-7deg);
+  font-size: clamp(1rem, 3.5vw, 1.3rem);
 }
 
 .plan-carrera h2:nth-child(2) {
@@ -541,11 +542,11 @@ h2 {
   border: 1px solid black;
   text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
   font-weight: bold;
-  font-size: 25px;
   transform: initial;
   transform: rotate(4deg);
   position: absolute;
   right: 3%;
+  font-size: clamp(1rem, 3.5vw, 1rem);
 }
 
 .plan-carrera .container-desarrollar {
@@ -554,11 +555,11 @@ h2 {
   padding: 5px 10px;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   width: fit-content;
   text-align: justify;
   margin-left: auto;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
@@ -568,14 +569,14 @@ h2 {
   padding: 15px 100px;
   color: black;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   width: fit-content;
   text-align: justify;
   margin-top: 40px;
   width: 50%;
   text-align: center;
-  margin-left: 60px;
-  top: 30%;
+  margin-left: 35px;
+  top: 25%;
   position: absolute;
 }
 
@@ -589,15 +590,16 @@ h2 {
 .plan-carrera .container-logros {
   display: flex;
   gap: 20px;
-  width: 65%;
-  margin-top: 40px;
+  width: 60%;
+  position: relative;
+  top: -50px;
 }
 
 .plan-carrera .container-logros div {
   padding: 10px;
   background-color: #feb0e1;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-align: justify;
   width: 100%;
@@ -634,9 +636,9 @@ h2 {
   color: black;
   border: 2px solid black;
   padding: 20px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
-  width: 85%;
+  width: 100%;
   align-self: flex-end;
   position: relative;
 }

@@ -26,6 +26,8 @@ export const Funciones = () => {
         </li>
         <li> innovación incremental de los desarrollos</li>
       </ul>
+
+      <img src='https://video-public.canva.com/VAFKHIeV6E8/v/07ba2e6363.gif' />
     </section>
   );
 };

@@ -712,16 +712,26 @@ h2 {
 
 .MisionExperto .banner {
   grid-area: svg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .MisionExperto .logos {
   grid-area: logos;
   display: flex;
-  justify-content: space-between;
-  height: calc(100px + 3rem);
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.MisionExperto img {
-  width: 100%;
+.MisionExperto .banner img {
+  width: min(500px, 100%);
   padding: 2rem;
+}
+
+.MisionExperto .logos img {
+  height: 100px;
 }

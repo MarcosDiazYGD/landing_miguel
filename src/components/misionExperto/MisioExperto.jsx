@@ -21,10 +21,10 @@ function MisionExperto() {
       </div>
 
       <div className='logos'>
-<img src={imgMeta}  />
-<img src={imgMeta}  />
-<img src={imgMeta}  />
-<img src={imgMeta}  />
+        <img src={imgMeta} />
+        <img src={imgMeta} />
+        <img src={imgMeta} />
+        <img src={imgMeta} />
       </div>
     </section>
   );

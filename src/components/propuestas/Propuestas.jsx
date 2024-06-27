@@ -15,8 +15,9 @@ export const Propuestas = () => {
             Después de obtener la aprobación para proceder con la migración,
             lideré el proceso de implementación, asegurándome de que se llevara
             a cabo de manera eficiente y sin interrupciones en nuestras
-            operaciones diarias. <br /> <span>– Migración AWS a Drive</span>
+            operaciones diarias.
           </p>
+          <span>– Migración AWS a Drive</span>
         </div>
         <div className='propuestas-card'>
           <p>
@@ -26,9 +27,8 @@ export const Propuestas = () => {
             creamos un documento detallado que establecía procedimientos
             específicos para la gestión efectiva de nuestra infraestructura,
             incluyendo DigitalOcean y otros proveedores de servicios en la nube.{' '}
-            <br />
-            <span>- Soporte y mantenimiento de infraestructura</span>
           </p>
+          <span>- Soporte y mantenimiento de infraestructura</span>
         </div>
         <div className='propuestas-card'>
           <p>
@@ -39,9 +39,9 @@ export const Propuestas = () => {
             permite un mejor aprovechamiento de los recursos. Además, como
             proyecto sugerido por mí, lideraré la implementación del modelo LLM
             Llama-2 Meta, con el objetivo de contribuir significativamente a la
-            nueva metodología. <br />{' '}
-            <span>- Nueva Metodología y Llama-2 Meta</span>
+            nueva metodología.
           </p>
+          <span>- Nueva Metodología y Llama-2 Meta</span>
         </div>
       </div>
     </section>

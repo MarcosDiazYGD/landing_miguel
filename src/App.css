@@ -15,14 +15,13 @@
   transform: translateX(0);
 }
 
-
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff;
   padding-inline: 5rem;
   height: 100vh;
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -97,7 +96,6 @@ section {
   justify-content: space-between;
   align-items: start;
   height: auto;
-  gap: 2rem;
 }
 
 h2 {
@@ -106,7 +104,7 @@ h2 {
 
 .flex-element {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
   justify-content: stretch;
   align-items: center;
 }
@@ -122,17 +120,16 @@ h2 {
 }
 
 .flex-element img {
-  padding: 2rem;
-  width: 40%;
+  width: clamp(300px, 30vw, 600px);
+  padding: 3rem;
 }
 
 .Confirm {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .Confirm p {
@@ -140,9 +137,7 @@ h2 {
 }
 
 .Confirm img {
-  width: min(700px, 100%);
-  max-width: 1000px;
-  height: 100%;
+  width: clamp(400px, 40vw, 700px);
 }
 
 .Piloto {
@@ -192,6 +187,7 @@ h2 {
   margin-top: 0;
   padding-bottom: 0;
   margin-bottom: 2rem;
+  height: 100vh;
 }
 
 .Logros img {
@@ -214,11 +210,12 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  gap: 3rem;
 }
 
 .propuestas .propuestas-titulo img {
-  width: 60%;
+  width: clamp(200px, 20vw, 500px);
 }
 
 .propuestas h2 {
@@ -226,29 +223,26 @@ h2 {
   max-width: min(500px, 100%);
   font-size: clamp(2rem, 5vw, 2rem);
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .propuestas .container-propuestas {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  width: 70%;
+  gap: 1rem;
+  width: 100%;
 }
 
 .container-propuestas .propuestas-card {
   border: 1px dashed #8a3dfd;
   border-radius: 40px;
-  padding: 22px;
-  padding: 20px 50px;
-}
-
-.container-propuestas .propuestas-card p {
-  font-size: clamp(0.7rem, 1.5vw, 0.8rem);
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: clamp(0.7rem, 1vw, 0.8rem);
+  gap: 0.5rem;
 }
 
 .container-propuestas .propuestas-card span {
-  padding-top: 0.2rem;
   display: block;
   color: #d73ca9;
 }
@@ -337,11 +331,18 @@ h2 {
 
 .testimonios .testimonio-card {
   width: 80% !important;
-  background: linear-gradient(to bottom right, #57d6d4, #b19cd9);
-  padding: 2rem 1rem;
+  padding: 2rem;
   text-align: start;
   border-radius: 10px;
-  color: black;
+  color: whitesmoke;
+  background-image: linear-gradient(
+    to right,
+    #004aad,
+    #4e53be,
+    #7b5cce,
+    #a464db,
+    #cb6ce6
+  );
 }
 
 .testimonios .testimonio-card .person {
@@ -398,6 +399,11 @@ h2 {
 .kpi_section {
   margin-top: 0rem;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100vh;
 }
 
 .cards_kpi {
@@ -709,6 +715,7 @@ h2 {
 .MisionExperto {
   display: grid;
   column-gap: 3rem;
+  row-gap: 1rem;
   grid-template-areas:
     ' texts svg'
     ' texts svg'
@@ -740,11 +747,10 @@ h2 {
 }
 
 .MisionExperto .banner img {
-  width: min(500px, 100%);
+  width: min(350px, 100%);
   padding: 2rem;
 }
 
 .MisionExperto .logos img {
   height: 100px;
 }
-  

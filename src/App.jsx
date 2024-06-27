@@ -4,7 +4,6 @@ import { Funciones } from './components/funciones/Funciones';
 import { Liderazgo } from './components/liderazgo/Liderazgo';
 import { Propuestas } from './components/propuestas/Propuestas';
 import { KPI } from "./components/KPI'S/KPI";
-
 import Tecnologias from './components/tecnologias/Tecnologias';
 import ConfirmSection from './components/ConfirmSection';
 import Logros from './components/logros/Logros';
@@ -15,25 +14,48 @@ import Home from './components/Home';
 import './App.css';
 import { PlanCarrera } from './components/PlanCarrera/PlanCarrera';
 import MisionExperto from './components/misionExperto/MisioExperto.jsx';
+import FadeInSection from './hooks/fadeInsection.jsx';
 
 function App() {
   return (
     <>
       <Navbar />
       <Home />
-      <About />
-      <ConfirmSection />
-      <Piloto />
-      <Logros />
-      <Propuestas />
-      <Liderazgo />
-      <Testimonios />
-      <KPI />
-      <Indicadores />
+      <FadeInSection>
+        <About />
+      </FadeInSection>
+      <FadeInSection>
+        <ConfirmSection />
+      </FadeInSection>
+      <FadeInSection>
+        <Piloto />
+      </FadeInSection>
+      <FadeInSection>
+        <Logros />
+      </FadeInSection>
+      <FadeInSection>
+        <Propuestas />
+      </FadeInSection>
+      <FadeInSection>
+        <Liderazgo />
+      </FadeInSection>
+      <FadeInSection>
+        <Testimonios />
+      </FadeInSection>
+      <FadeInSection>
+        <KPI />
+      </FadeInSection>
+      <FadeInSection>
+        <Indicadores />
+      </FadeInSection>
       <Tecnologias />
       <PlanCarrera />
-      <Funciones />
-      <MisionExperto />
+      <FadeInSection>
+        <Funciones />
+      </FadeInSection>
+      <FadeInSection>
+        <MisionExperto />
+      </FadeInSection>
     </>
   );
 }

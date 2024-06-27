@@ -14,6 +14,7 @@ import About from './components/about/About';
 import Home from './components/Home';
 import './App.css';
 import { PlanCarrera } from './components/PlanCarrera/PlanCarrera';
+import MisionExperto from './components/misionExperto/MisioExperto.jsx';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Tecnologias />
       <PlanCarrera />
       <Funciones />
+      <MisionExperto />
     </>
   );
 }

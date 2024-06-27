@@ -12,20 +12,25 @@ html {
   height: 100vh;
   font-size: 24px;
   position: relative;
+}
 
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+  background-image: linear-gradient(
+    to right top,
+    #281549,
+    #211344,
+    #1a103f,
+    #130d3a,
+    #0d0835,
+    #0d0835,
+    #0d0835,
+    #0d0835,
+    #130d3a,
+    #1a103f,
+    #211344,
+    #281549
+  );
+  background-attachment: fixed;
 }
 
 section {
@@ -84,7 +89,7 @@ section {
 }
 
 h2 {
-  font-size: clamp(2rem, 3.5vw, 5rem);
+  font-size: clamp(1.8rem, 1.5vw, 3rem);
 }
 
 .flex-element {
@@ -390,6 +395,8 @@ h2 {
   margin-bottom: 0;
   margin-top: 2rem;
   min-height: initial;
+  align-items: center;
+  gap: 2rem;
 }
 
 .card_kpi {
@@ -398,32 +405,27 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
-  flex-direction: column;
-  border-radius: 5px;
-  width: 300px;
-  aspect-ratio: 16/7;
-  padding: 1rem;
+  background-color: transparent;
   color: white;
-  border: 1px solid #beb0fa;
+  border: 1px solid rgb(190, 176, 250);
+  width: clamp(200px, 20vw, 300px);
+  height: fit-content;
+  padding: 1rem;
 }
 
-.indicadores {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  width: calc(100% + 10rem);
-  background-color: #06002e;
-  color: #fff;
-  padding: 1rem 3rem;
-  transition: top 0.2s ease;
+.card_kpi > div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  left: -5rem;
-  display: flex;
-  gap: 2rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  justify-content: end;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  color: rgb(190, 176, 250);
+}
+
+.card_kpi span {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.card_kpi p {
+  font-size: clamp(0.7rem, 0.8vw, 1.5rem);
 }
 
 .indicadores .container {
@@ -442,8 +444,7 @@ h2 {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  width: 300px;
-  aspect-ratio: 16/7;
+  width: clamp(220px, 22vw, 320px);
   padding: 1rem;
   border: 1px solid #beb0fa;
 }
@@ -451,7 +452,7 @@ h2 {
 .indicador > div:nth-child(1) {
   display: flex;
   justify-content: end;
-  font-size: 2rem;
+  font-size: clamp(1rem, 1.5vw, 2rem);
   color: #beb0fa;
 }
 
@@ -461,13 +462,12 @@ h2 {
 }
 
 .indicador > div:nth-child(2) > p {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .indicador > div:nth-child(3) > p {
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 0.8vw, 1.5rem);
 }
-
 .funciones {
   width: 100%;
   height: 100%;
@@ -491,34 +491,19 @@ h2 {
   position: relative;
   width: calc(100% + 10rem);
   background-color: #ffffff;
-  padding: 1rem 3rem;
   transition: top 0.2s ease;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  left: -5rem;
-}
-
-.tecnologias > div {
-  display: grid;
-  justify-items: center;
   align-items: center;
+
+  flex-wrap: wrap;
+  gap: 2rem;
+  left: -5rem;
+  padding: 1rem 0;
 }
 
-.tecnologias > div:first-child {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.tecnologias > div:last-child {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.tecnologias.scrolled {
-  top: -100px;
-}
-
-.tecnologias img {
-  max-height: 100%;
+.tecnologias > img {
+  max-height: 60px;
 }
 
 .navbar {
@@ -532,13 +517,14 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   padding-inline: clamp(1rem, 10vw, 10rem);
   transition: top 0.2s ease;
 }
 
 .navbar h3 {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 0.8vw, 1rem);
+  font-weight: normal;
 }
 
 .navbar.scrolled {
@@ -706,4 +692,36 @@ h2 {
 
 .plan-carrera .container-qs div:nth-child(4) span:nth-child(1) {
   background-color: #f9b2dc;
+}
+
+.MisionExperto {
+  display: grid;
+  column-gap: 3rem;
+  grid-template-areas:
+    ' texts svg'
+    ' texts svg'
+    ' logos logos';
+}
+.MisionExperto .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  grid-area: texts;
+}
+
+.MisionExperto .banner {
+  grid-area: svg;
+}
+
+.MisionExperto .logos {
+  grid-area: logos;
+  display: flex;
+  justify-content: space-between;
+  height: calc(100px + 3rem);
+}
+
+.MisionExperto img {
+  width: 100%;
+  padding: 2rem;
 }

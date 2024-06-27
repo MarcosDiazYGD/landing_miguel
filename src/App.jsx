@@ -20,7 +20,10 @@ function App() {
   return (
     <>
       <Navbar />
+      <FadeInSection>
+
       <Home />
+</FadeInSection>
       <FadeInSection>
         <About />
       </FadeInSection>

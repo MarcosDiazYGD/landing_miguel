@@ -43,12 +43,14 @@ function App() {
       <FadeInSection>
         <Testimonios />
       </FadeInSection>
-      <FadeInSection>
-        <KPI />
-      </FadeInSection>
-      <FadeInSection>
-        <Indicadores />
-      </FadeInSection>
+      <div className='gradient_kpi_indicadores'>
+        <FadeInSection>
+          <KPI />
+        </FadeInSection>
+        <FadeInSection>
+          <Indicadores />
+        </FadeInSection>
+      </div>
       <Tecnologias />
       <PlanCarrera />
       <FadeInSection>

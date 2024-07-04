@@ -75,12 +75,22 @@ section {
 }
 
 .About {
+  margin-top: 0;
+  position: relative;
+  width: calc(100% + 10rem);
+  transition: top 0.2s ease;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: start;
-  height: auto;
-  padding: 0 100px;
+  flex-direction: column;
+  left: -5rem;
+  margin: 0;
+  padding: 2rem 180px;
+  background: rgb(1, 175, 163);
+  background: linear-gradient(
+    144deg,
+    rgba(1, 175, 163, 1) 0%,
+    rgba(18, 127, 182, 1) 44%,
+    rgba(130, 77, 159, 1) 100%
+  );
 }
 
 h2 {
@@ -142,6 +152,7 @@ h2 {
   min-height: 100vh;
   text-align: center;
   padding: 0 50px;
+  margin-top: 2rem;
 }
 
 .Piloto p {
@@ -420,7 +431,17 @@ h2 {
   flex-direction: column;
   gap: 3rem;
   min-height: fit-content;
-  padding: 0 100px;
+  padding: 2rem 180px 5rem 180px;
+  position: relative;
+  width: calc(100% + 10rem);
+  background-color: #3ea66b;
+  transition: top 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  left: -5rem;
+  margin: 0;
+  background: rgb(1, 175, 163);
+  background: transparent;
 }
 
 .cards_kpi {
@@ -440,9 +461,8 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   gap: 10px;
-  background-color: transparent;
+  background-color: #06002e;
   color: white;
-  border: 1px solid rgb(190, 176, 250);
   width: clamp(200px, 20vw, 300px);
   height: 150px;
   padding: 1rem;
@@ -465,7 +485,16 @@ h2 {
 
 .indicadores {
   margin-top: 0;
-  padding: 0 100px;
+  position: relative;
+  width: calc(100% + 10rem);
+  transition: top 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  left: -5rem;
+  margin: 0;
+  padding: 2rem 180px;
+  background: rgb(1, 175, 163);
+  background: transparent;
 }
 
 .indicadores h2 {
@@ -477,11 +506,22 @@ h2 {
   align-items: end;
   gap: 1rem;
   flex-direction: column;
+  margin-top: 1rem;
 }
+
 .indicadores .container > div {
   display: flex;
   justify-content: end;
   gap: 1rem;
+}
+
+.indicadores img {
+  position: absolute;
+  width: 280px;
+  top: 25%;
+  left: 18%;
+  transform: rotate(-20deg);
+  z-index: -0;
 }
 
 .indicador {
@@ -490,7 +530,7 @@ h2 {
   border-radius: 5px;
   width: clamp(220px, 22vw, 250px);
   padding: 1rem;
-  border: 1px solid #beb0fa;
+  background-color: #06002e;
 }
 
 .indicador > div:nth-child(1) {
@@ -512,6 +552,26 @@ h2 {
 .indicador > div:nth-child(3) > p {
   font-size: clamp(0.7rem, 0.8vw, 1.5rem);
 }
+
+.gradient_kpi_indicadores {
+  margin-top: 0;
+  position: relative;
+  width: calc(100% + 10rem);
+  transition: top 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  left: -5rem;
+  margin: 0;
+  padding: 2rem 180px;
+  background: rgb(1, 175, 163);
+  background: linear-gradient(
+    144deg,
+    rgba(1, 175, 163, 1) 0%,
+    rgba(18, 127, 182, 1) 44%,
+    rgba(130, 77, 159, 1) 100%
+  );
+}
+
 .funciones {
   width: 100%;
   height: 100%;

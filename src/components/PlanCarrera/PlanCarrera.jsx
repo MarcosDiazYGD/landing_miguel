@@ -17,7 +17,7 @@ export const PlanCarrera = () => {
       </div>
       <div className='flex-logros'>
         <div className='container-lograr'>
-          <span>LO QUE QUIERO LOGRAR ESTE AÑO</span>
+          <span>LO QUE QUIERO LOGRAR EN UN AÑO</span>
         </div>
         <div className='container-logros'>
           <div>
@@ -69,11 +69,11 @@ export const PlanCarrera = () => {
           <div>
             <span>Q2</span>
             <p>
-              realizar un análisis exhaustivo de las capacidades tecnológicas
-              actuales de buho, para mejorar la competitividad. Desarrollar
-              indicadores de progreso para cada área y completar el análisis y
-              el informe con un plan de implementación para el final del tercer
-              trimestre del año.
+              Desplegar un modelo de lenguaje de largo alcance (LLM),
+              reentrenado con datos propios, para uso interno. El objetivo es
+              asegurar la privacidad y seguridad de nuestra información
+              sensible, al mismo tiempo que se potencia el domain knowledge y se
+              hace más accesible y global para todos en buho.
             </p>
           </div>
           <div>
@@ -90,11 +90,11 @@ export const PlanCarrera = () => {
           <div>
             <span>Q4</span>
             <p>
-              Desplegar un modelo de lenguaje de largo alcance (LLM),
-              reentrenado con datos propios, para uso interno. El objetivo es
-              asegurar la privacidad y seguridad de nuestra información
-              sensible, al mismo tiempo que se potencia el domain knowledge y se
-              hace más accesible y global para todos en buho.
+              realizar un análisis exhaustivo de las capacidades tecnológicas
+              actuales de buho, para mejorar la competitividad. Desarrollar
+              indicadores de progreso para cada área y completar el análisis y
+              el informe con un plan de implementación para el final del tercer
+              trimestre del año.
             </p>
           </div>
         </div>

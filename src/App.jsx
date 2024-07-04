@@ -16,6 +16,7 @@ import MisionExperto from './components/misionExperto/MisioExperto.jsx';
 import FadeInSection from './hooks/fadeInsection.jsx';
 import PlanMejoramiento from './components/planMejoramiento/PlanMejoramiento.jsx';
 import { ProyectoExperto } from './components/ProyectoExperto/ProyectoExperto.jsx';
+import Gracias from './components/gracias/Gracias.jsx';
 
 function App() {
   return (
@@ -64,6 +65,9 @@ function App() {
       </FadeInSection>
       <FadeInSection>
         <ProyectoExperto />
+      </FadeInSection>
+      <FadeInSection>
+        <Gracias />
       </FadeInSection>
     </>
   );

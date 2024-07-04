@@ -272,7 +272,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 0 100px;
+  padding: 0 70px;
 }
 
 .liderazgo .container {
@@ -281,10 +281,14 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  padding: 10px 50px;
 }
 
 .liderazgo .container > div:nth-child(1) {
   width: min(500px, 100%);
+  -webkit-box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
+  -moz-box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
+  box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
 }
 
 .liderazgo .container > div:nth-child(2) {
@@ -299,6 +303,10 @@ h2 {
   filter: blur();
   padding: 1rem;
   text-align: left;
+
+  -webkit-box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
+  -moz-box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
+  box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
 }
 
 .liderazgo .container > div:nth-child(2) video {
@@ -898,4 +906,29 @@ h2 {
   margin: 0.5rem;
   font-size: 17px;
   font-style: italic;
+}
+
+.gracias {
+  margin-top: 0;
+  position: relative;
+  width: calc(100% + 10rem);
+  transition: top 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -5rem;
+  margin: 0;
+  padding: 2rem 180px;
+  background: rgb(1, 175, 163);
+  background: linear-gradient(
+    144deg,
+    rgba(1, 175, 163, 1) 0%,
+    rgba(18, 127, 182, 1) 44%,
+    rgba(130, 77, 159, 1) 100%
+  );
+  height: 100vh;
+}
+
+.gracias h2 {
+  font-size: 70px;
 }

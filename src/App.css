@@ -23,25 +23,9 @@ html {
   height: 100vh;
   font-size: 20px;
   position: relative;
-}
-
-body {
-  background-image: linear-gradient(
-    to right top,
-    #281549,
-    #211344,
-    #1a103f,
-    #130d3a,
-    #0d0835,
-    #0d0835,
-    #0d0835,
-    #0d0835,
-    #130d3a,
-    #1a103f,
-    #211344,
-    #281549
-  );
-  background-attachment: fixed;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 }
 
 section {
@@ -186,8 +170,10 @@ h2 {
   align-items: center;
   margin-top: 0;
   padding-bottom: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   height: 100vh;
+  margin-top: 0;
+  text-align: center;
 }
 
 .Logros img {
@@ -198,6 +184,8 @@ h2 {
   margin: 0 auto;
   max-width: min(1000px, 100%);
   font-size: clamp(3rem, 5vw, 8rem);
+  color: rgb(190, 176, 250);
+  text-decoration: none;
 }
 
 .propuestas {
@@ -398,12 +386,12 @@ h2 {
 
 .kpi_section {
   margin-top: 0rem;
-  margin-bottom: 0;
+  margin-bottom: 6rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
-  height: 100vh;
+  min-height: fit-content;
 }
 
 .cards_kpi {
@@ -444,6 +432,10 @@ h2 {
 
 .card_kpi p {
   font-size: clamp(0.7rem, 0.8vw, 1.5rem);
+}
+
+.indicadores {
+  margin-top: 0;
 }
 
 .indicadores .container {
@@ -491,6 +483,7 @@ h2 {
   height: 100%;
   position: relative;
   padding-bottom: 3rem;
+  margin-bottom: 0;
 }
 
 .funciones ul {
@@ -720,13 +713,28 @@ h2 {
     ' texts svg'
     ' texts svg'
     ' logos logos';
+  margin: 0;
 }
+
 .MisionExperto .texts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
   grid-area: texts;
+}
+
+.MisionExperto .texts h2 {
+  font-size: 50px;
+  color: #f5ecec;
+  text-shadow: 0 0 7px #fff, 0 0 2px #fff, 0 0 0px #fff, 0 0 0px #fff,
+    0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff;
+}
+
+.MisionExperto .texts p {
+  text-align: justify;
+  width: 90%;
+  font-size: 21px;
 }
 
 .MisionExperto .banner {
@@ -753,4 +761,39 @@ h2 {
 
 .MisionExperto .logos img {
   height: 100px;
+}
+
+.proyecto_experto {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.proyecto_experto h2 {
+  font-size: 45px;
+}
+
+.container_slider_proyecto {
+  padding: 0 10px;
+  height: fit-content;
+  width: 70%;
+}
+
+.container_slider_proyecto h2 {
+  color: #b53cbe;
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.container_slider_proyecto p {
+  font-size: 20px;
+}
+
+.container_slider_proyecto span {
+  display: block;
+  margin: 0.5rem;
+  font-size: 17px;
+  font-style: italic;
 }

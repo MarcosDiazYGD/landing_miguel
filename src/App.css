@@ -415,7 +415,7 @@ h2 {
   color: white;
   border: 1px solid rgb(190, 176, 250);
   width: clamp(200px, 20vw, 300px);
-  height: fit-content;
+  height: 150px;
   padding: 1rem;
 }
 

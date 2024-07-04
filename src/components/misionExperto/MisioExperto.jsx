@@ -4,6 +4,7 @@ import imgJaveriana from '../../assets/img/Javeriana.png';
 import imgAgustiniana from '../../assets/img/Agustiniana.png';
 import imgMinTic from '../../assets/img/MinTic.png';
 import imgCCPL from '../../assets/img/CCPL.png';
+const cars = [imgSena, imgJaveriana, imgAgustiniana, imgMinTic, imgCCPL];
 
 function MisionExperto() {
   return (
@@ -26,12 +27,23 @@ function MisionExperto() {
         <img src={imgGroup} />
       </div>
 
-      <div className='logos'>
-        <img src={imgSena} />
-        <img src={imgJaveriana} />
-        <img src={imgAgustiniana} />
-        <img src={imgMinTic} />
-        <img src={imgCCPL} />
+      <div className='slider'>
+        <div className='slide-track'>
+          {cars.map((car, index) => {
+            return (
+              <div className='slide' key={index}>
+                <img src={car} alt='imageforslider' />
+              </div>
+            );
+          })}
+          {cars.map((car, index) => {
+            return (
+              <div className='slide' key={index}>
+                <img src={car} alt='imageforslider' />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

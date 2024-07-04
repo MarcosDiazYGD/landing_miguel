@@ -863,7 +863,7 @@ h2 {
   gap: 1rem;
 }
 
-.MisionExperto .logos img {
+.MisionExperto .slider img {
   width: 100px;
 }
 
@@ -932,4 +932,48 @@ h2 {
 
 .gracias h2 {
   font-size: 70px;
+}
+
+.slider {
+  background: transparent;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  grid-area: logos;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.slide-track {
+  display: inline-block;
+  animation: move 20s linear infinite;
+  white-space: nowrap;
+}
+
+.slide-track > * {
+  padding: 2vw;
+  display: inline-block;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
 }

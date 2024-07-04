@@ -31,16 +31,19 @@ export const ProyectoExperto = () => {
               Evalué la capacidad de nuestra infraestructura en la nube para
               aprovecharla al máximo y presidir de recursos poco aprovechados,
               migrándolos a servidores existentes para ser más rentables como
-              área <span>Costo fijo mensual ahorrado 240 USD</span>
+              área
             </p>
+
+            <span>Costo fijo mensual ahorrado 240 USD</span>
 
             <p>
               Después de obtener la aprobación para proceder con la migración,
               lideré el proceso de implementación, asegurándome de que se
               llevara a cabo de manera eficiente y sin interrupciones en
               nuestras operaciones diarias.{' '}
-              <span>Total ahorrado abril - junio 1.092,37 USD </span>
             </p>
+
+            <span>Total ahorrado abril - junio 1.092,37 USD </span>
           </div>
           <div>
             <h2>Soporte y mantenimiento de infraestructura</h2>

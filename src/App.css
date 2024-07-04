@@ -80,6 +80,7 @@ section {
   justify-content: space-between;
   align-items: start;
   height: auto;
+  padding: 0 100px;
 }
 
 h2 {
@@ -97,10 +98,23 @@ h2 {
   flex-direction: row-reverse;
 }
 
+.column {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.column p {
+  font-size: 25px;
+}
+
 .flex-element p {
   width: 100%;
   text-wrap: balance;
-  width: 60%;
+  width: 80%;
 }
 
 .flex-element img {
@@ -127,6 +141,12 @@ h2 {
 .Piloto {
   min-height: 100vh;
   text-align: center;
+  padding: 0 50px;
+}
+
+.Piloto p {
+  width: 80%;
+  margin: 1rem auto 0 auto;
 }
 
 .slick-track {
@@ -137,7 +157,7 @@ h2 {
 .piloto_card {
   min-width: 350px;
   width: 80% !important;
-  height: 450px;
+  height: 580px !important;
   background: linear-gradient(to bottom right, #add8e6, #b19cd9);
   border-radius: 10px;
   color: black;
@@ -174,6 +194,7 @@ h2 {
   height: 100vh;
   margin-top: 0;
   text-align: center;
+  padding: 0 100px;
 }
 
 .Logros img {
@@ -233,12 +254,14 @@ h2 {
 .container-propuestas .propuestas-card span {
   display: block;
   color: #d73ca9;
+  font-weight: bold;
 }
 
 .liderazgo {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 0 100px;
 }
 
 .liderazgo .container {
@@ -264,6 +287,7 @@ h2 {
   border-radius: 10px;
   filter: blur();
   padding: 1rem;
+  text-align: left;
 }
 
 .liderazgo .container > div:nth-child(2) video {
@@ -317,8 +341,12 @@ h2 {
   margin: 0 auto;
 }
 
+.testimonios {
+  padding: 0 100px;
+}
+
 .testimonios .testimonio-card {
-  width: 80% !important;
+  width: 90% !important;
   padding: 2rem;
   text-align: start;
   border-radius: 10px;
@@ -392,6 +420,7 @@ h2 {
   flex-direction: column;
   gap: 3rem;
   min-height: fit-content;
+  padding: 0 100px;
 }
 
 .cards_kpi {
@@ -436,6 +465,11 @@ h2 {
 
 .indicadores {
   margin-top: 0;
+  padding: 0 100px;
+}
+
+.indicadores h2 {
+  font-size: 50px;
 }
 
 .indicadores .container {
@@ -454,7 +488,7 @@ h2 {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  width: clamp(220px, 22vw, 320px);
+  width: clamp(220px, 22vw, 250px);
   padding: 1rem;
   border: 1px solid #beb0fa;
 }
@@ -484,10 +518,15 @@ h2 {
   position: relative;
   padding-bottom: 3rem;
   margin-bottom: 0;
+  padding: 0 100px;
 }
 
 .funciones ul {
   margin-top: 60px;
+}
+
+.funciones ul li {
+  width: 70%;
 }
 
 .funciones img {
@@ -546,7 +585,7 @@ h2 {
   position: relative;
   width: calc(100% + 10rem);
   background-color: #3ea66b;
-  padding: 1.5rem 3rem;
+  padding: 2rem 3rem;
   transition: top 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -564,7 +603,7 @@ h2 {
   text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
   font-weight: bold;
   transform: rotate(-7deg);
-  font-size: clamp(1rem, 3.5vw, 1.8rem);
+  font-size: clamp(1rem, 4vw, 6rem);
 }
 
 .plan-carrera h2:nth-child(2) {
@@ -580,7 +619,7 @@ h2 {
   transform: rotate(4deg);
   position: absolute;
   right: 3%;
-  font-size: clamp(1rem, 3.5vw, 1.3rem);
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
 }
 
 .plan-carrera .container-desarrollar {
@@ -714,6 +753,7 @@ h2 {
     ' texts svg'
     ' logos logos';
   margin: 0;
+  padding: 0 100px;
 }
 
 .MisionExperto .texts {
@@ -754,13 +794,13 @@ h2 {
   gap: 1rem;
 }
 
+.MisionExperto .logos img {
+  width: 100px;
+}
+
 .MisionExperto .banner img {
   width: min(350px, 100%);
   padding: 2rem;
-}
-
-.MisionExperto .logos img {
-  height: 100px;
 }
 
 .proyecto_experto {
@@ -769,6 +809,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 5rem;
+  padding: 0 100px;
 }
 
 .proyecto_experto h2 {
@@ -789,6 +830,7 @@ h2 {
 
 .container_slider_proyecto p {
   font-size: 20px;
+  text-align: left;
 }
 
 .container_slider_proyecto span {

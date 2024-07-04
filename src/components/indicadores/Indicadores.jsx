@@ -7,17 +7,23 @@ export const Indicadores = () => {
 
       <div className='container'>
         <div>
-          <IndicatorCard />
+          <IndicatorCard
+            puntaje={'3.0'}
+            text={'CUMPLIMIENTO CRONOGRAMA DE DESARROLLO'}
+          />
         </div>
 
         <div>
-          <IndicatorCard />
-          <IndicatorCard />
+          <IndicatorCard puntaje={'2.8'} text={'NPS'} />
+          <IndicatorCard puntaje={'2.8'} text={'FEEDBACK'} />
         </div>
         <div>
-          <IndicatorCard />
-          <IndicatorCard />
-          <IndicatorCard />
+          <IndicatorCard
+            puntaje={'2.8'}
+            text={'SOPORTES PROMEDIO DE SOFTWARES PROPIOS'}
+          />
+          <IndicatorCard puntaje={'3.0'} text={'CLIMA'} />
+          <IndicatorCard puntaje={'2.8'} text={'ROTACIÓN'} />
         </div>
       </div>
     </section>

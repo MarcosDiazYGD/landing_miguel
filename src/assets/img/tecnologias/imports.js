@@ -5,6 +5,7 @@ import nuevaMetodologia from './nuevaMetodologia.png';
 import verne from './verne.png';
 import webScrap from './webScrap.png';
 import obsidian from './obsidianpng.png';
+import paginaWeb from './PaginaWeb.png';
 
 export default {
   meta,
@@ -14,4 +15,5 @@ export default {
   nuevaMetodologia,
   webScrap,
   obsidian,
+  paginaWeb,
 };

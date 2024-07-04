@@ -13,21 +13,21 @@ export const Liderazgo = () => {
     {
       avatar: marcosAvatar,
       name: 'Marcos Alape',
-      description: `Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.`,
+      description: `Desarrollador Front-End Junior.`,
       video: marcosVideo,
     },
 
     {
       avatar: jeyssonAvatar,
       name: 'Jeysson Henriquez',
-      description: `Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.`,
+      description: `Desarrollador Front-End Senior.`,
       video: jhonVideo,
     },
 
     {
       avatar: jhonAvatar,
       name: 'Jhonattan Gómez',
-      description: `Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.`,
+      description: `Analista de Soporte.`,
       video: jhonVideo,
     },
   ];

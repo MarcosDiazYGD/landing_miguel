@@ -10,6 +10,7 @@ function Tecnologias() {
       <img src={imgs.nuevaMetodologia} />
       <img src={imgs.obsidian} />
       <img src={imgs.webScrap} />
+      <img src={imgs.paginaWeb} />
     </div>
   );
 }

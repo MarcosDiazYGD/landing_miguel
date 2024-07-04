@@ -7,30 +7,31 @@ function PilotoCard() {
     {
       title: 'Desarrollo de Habilidades Técnicas',
       list: [
-        'Profundice en el dominio de nuevas tecnologías',
-        'implementación de soluciones más eficientes',
+        'Profundización en Nuevas Tecnologías: Durante este periodo, adquirí un dominio más profundo de tecnologías emergentes, lo que me permitió implementar soluciones más robustas y eficientes. Este conocimiento se reflejó en la optimización de procesos y en la mejora del rendimiento de nuestras aplicaciones.',
+        'Innovación en Soluciones: Introduje nuevas metodologías y herramientas que facilitaron el desarrollo ágil y la entrega continua, mejorando significativamente la eficiencia y la calidad de nuestro trabajo.',
       ],
     },
 
     {
       title: 'Liderazgo y Gestión de Equipos',
       list: [
-        'Asumí la responsabilidad de guiar y coordinar las actividades del equipo.',
-        'resolver conflictos, motivar al equipo',
+        'Coordinación y Guía del Equipo: Asumí la responsabilidad de liderar y coordinar las actividades del equipo, asegurando que todos los miembros estuvieran alineados con los objetivos del proyecto y mantuvieran un alto nivel de productividad.',
+        'Resolución de Conflictos y Motivación: Implementé estrategias efectivas para la resolución de conflictos, fomentando un ambiente de trabajo colaborativo y motivando al equipo a alcanzar sus metas. Utilicé técnicas de coaching y mentoring para apoyar el desarrollo profesional de los miembros del equipo.',
       ],
     },
 
     {
       title: 'Mejora de Habilidades Blandas',
       list: [
-        'Comunicación efectiva, la gestión del tiempo y la resolución de problemas.',
-        'Aprendí a transmitir ideas de manera clara y persuasiva',
+        'Comunicación Efectiva: Mejoré significativamente mi capacidad para comunicarme de manera clara y persuasiva, tanto en reuniones internas como en presentaciones a stakeholders externos. Esto incluyó la habilidad de explicar conceptos técnicos complejos en términos comprensibles para todos los involucrados.',
+        'Gestión del Tiempo y Resolución de Problemas: Refiné mis habilidades en la gestión del tiempo, priorizando tareas de manera efectiva y resolviendo problemas de forma rápida y eficiente, lo que contribuyó a mantener los proyectos en marcha y dentro de los plazos establecidos.',
       ],
     },
     {
       title: 'Nuevos Compromisos',
       list: [
-        'la gestión de recursos, toma de decisiones estratégicas y la resolución de problemas complejos en tiempo real.',
+        'Gestión de Recursos y Toma de Decisiones Estratégicas: Desarrollé habilidades avanzadas en la gestión de recursos, optimizando el uso del tiempo, el presupuesto y el personal. Además, mejoré mi capacidad para tomar decisiones estratégicas informadas, basadas en análisis de datos y evaluación de riesgos.',
+        'Resolución de Problemas Complejos en Tiempo Real: Adquirí experiencia en la identificación y resolución de problemas complejos en tiempo real, lo que permitió mantener la continuidad operativa y asegurar la calidad del producto final.',
       ],
     },
   ];
@@ -40,14 +41,14 @@ function PilotoCard() {
     className: 'center',
     centerMode: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     speed: 1000,
     centerPadding: '50px',
     responsive: [
       {
         breakpoint: 1920,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           dots: true,
           centerMode: true,
         },
@@ -63,7 +64,7 @@ function PilotoCard() {
       {
         breakpoint: 1100,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           dots: true,
           centerMode: true,
         },

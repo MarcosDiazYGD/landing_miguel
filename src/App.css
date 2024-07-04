@@ -307,6 +307,7 @@ h2 {
   -webkit-box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
   -moz-box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
   box-shadow: -10px 16px 16px 10px rgba(23, 25, 31, 0.37);
+  overflow: auto;
 }
 
 .liderazgo .container > div:nth-child(2) video {
@@ -885,7 +886,7 @@ h2 {
 }
 
 .container_slider_proyecto {
-  padding: 0 10px;
+  padding: 0 20px;
   height: fit-content;
   width: 70%;
 }

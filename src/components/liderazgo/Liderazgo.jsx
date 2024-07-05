@@ -1,23 +1,14 @@
 import jeyssonAvatar from '../../assets/img/avatars/jey.jpg';
 import marcosAvatar from '../../assets/img/avatars/marcos.jpg';
 import jhonAvatar from '../../assets/img/avatars/jhon.jpg';
-
 import jhonVideo from '../../assets/media/jhon.mp4';
-import marcosVideo from '../../assets/media/marcos.mp4';
 import jeyssonVideo from '../../assets/media/Jeysson.mp4';
-
+import File404 from '../../assets/img/File404.avif';
 import UserPerfil from './UserPerfil';
 import Slider from 'react-slick/lib/slider';
 
 export const Liderazgo = () => {
   const team = [
-    {
-      avatar: marcosAvatar,
-      name: 'Marcos Alape',
-      description: `Desarrollador Front-End Junior.`,
-      video: marcosVideo,
-    },
-
     {
       avatar: jeyssonAvatar,
       name: 'Jeysson Henriquez',
@@ -30,6 +21,12 @@ export const Liderazgo = () => {
       name: 'Jhonattan Gómez',
       description: `Analista de Soporte.`,
       video: jhonVideo,
+    },
+    {
+      avatar: marcosAvatar,
+      name: 'Marcos Alape',
+      description: `Desarrollador Front-End Junior.`,
+      video: File404,
     },
   ];
 

@@ -223,7 +223,9 @@ h2 {
 .propuestas {
   display: flex;
   align-items: center;
+  gap: 30px;
   margin: 0;
+  padding: 0 100px;
 }
 
 .propuestas .propuestas-titulo {
@@ -878,7 +880,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 5rem;
-  padding: 0 100px;
+  padding: 0 100px 30px 100px;
 }
 
 .proyecto_experto h2 {

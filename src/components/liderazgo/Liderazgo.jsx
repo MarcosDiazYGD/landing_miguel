@@ -4,6 +4,7 @@ import jhonAvatar from '../../assets/img/avatars/jhon.jpg';
 
 import jhonVideo from '../../assets/media/jhon.mp4';
 import marcosVideo from '../../assets/media/marcos.mp4';
+import jeyssonVideo from '../../assets/media/Jeysson.mp4';
 
 import UserPerfil from './UserPerfil';
 import Slider from 'react-slick/lib/slider';
@@ -21,7 +22,7 @@ export const Liderazgo = () => {
       avatar: jeyssonAvatar,
       name: 'Jeysson Henriquez',
       description: `Desarrollador Front-End Senior.`,
-      video: jhonVideo,
+      video: jeyssonVideo,
     },
 
     {

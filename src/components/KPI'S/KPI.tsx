@@ -5,7 +5,7 @@ import React from 'react';
 export const KPI = () => {
   return (
     <section className="kpi_section">
-      <h2>Resultadso de mis KPI actuales</h2>
+      <h2>Resultados de mis KPI actuales</h2>
 
       <section className="cards_kpi">
         <div className="card_kpi">

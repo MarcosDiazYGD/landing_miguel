@@ -4,7 +4,7 @@ import cruz from '../../assets/img/cruz.png';
 export const Indicadores = () => {
   return (
     <section className='indicadores'>
-      <h2>Indicadores como lider</h2>
+      <h2>Mis KPI como experto</h2>
 
       <img src={cruz} />
 
